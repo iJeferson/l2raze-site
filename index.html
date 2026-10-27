@@ -78,10 +78,27 @@ h2:after{background:linear-gradient(90deg,#d4a24c,#4a7fbf,transparent)}
 .card:hover{border-color:#4a7fbf !important;box-shadow:0 0 24px rgba(74,127,191,.18)}
 @media(max-width:1000px){.top{grid-template-columns:1fr}.right .rates{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:640px){.right .rates{grid-template-columns:1fr 1fr}}
+.char{position:fixed;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent 98%);mask-image:linear-gradient(to bottom,#000 72%,transparent 98%)}
+.char img{display:block;width:100%;height:auto}
+.knight{left:-4vw;bottom:-2vh;height:92vh;aspect-ratio:348/520;animation:floatA 7s ease-in-out infinite}
+.knight img{height:100%;width:auto;filter:drop-shadow(0 0 2px rgba(255,220,150,.6)) drop-shadow(-10px 0 28px rgba(212,162,76,.35)) drop-shadow(0 30px 40px rgba(0,0,0,.8))}
+.dwarf{right:-4vw;top:20vh;width:min(36vw,72vh);animation:floatB 6s ease-in-out infinite}
+.dwarf img{filter:drop-shadow(0 0 2px rgba(170,200,255,.6)) drop-shadow(12px 0 30px rgba(74,127,191,.45)) drop-shadow(0 30px 40px rgba(0,0,0,.8))}
+@keyframes floatA{50%{transform:translateY(-10px)}}
+@keyframes floatB{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-18px) rotate(1deg)}}
+.page{position:relative;z-index:1;width:min(62vw,1140px) !important}.cd-label{letter-spacing:.14em !important;white-space:nowrap;font-size:clamp(10px,.72vw,15px) !important}@media(max-width:640px){.cd-label{white-space:normal}}
+.page:before{content:"";position:absolute;inset:-4vh -4vw;z-index:-1;background:radial-gradient(ellipse at center,rgba(7,7,10,.72) 35%,transparent 72%);pointer-events:none}
+.top{grid-template-columns:1.2fr 1fr !important}
+@media(max-width:1400px){.page{width:min(74vw,1120px) !important}.char{opacity:.55}}
+@media(max-width:1000px){.page{width:92vw !important}.knight{opacity:.18;left:-20vw}.dwarf{opacity:.18;right:-25vw;width:80vw}}
+@media(max-width:1000px){.top{grid-template-columns:1fr !important}}@media(max-width:640px){.char{display:none}}
+h1{font-size:clamp(44px,min(6vw,8.5vh),130px) !important}.gflogo{width:clamp(180px,min(16vw,21vh),380px) !important}.cd-box{width:clamp(64px,min(6.5vw,11vh),150px) !important}.cd-num{font-size:clamp(30px,min(3.8vw,6.4vh),80px) !important}.card p{font-size:clamp(12px,.62vw + .2vh,16px) !important}
 </style>
 </head>
 <body>
 <div class="bg"></div>
+<div class="char knight"><img src="img/knight.webp" alt="Human Knight"></div>
+<div class="char dwarf"><img src="img/dwarf.webp" alt="Dwarf Warrior"></div>
 <div class="page">
 <div class="top">
 <header class="left">
