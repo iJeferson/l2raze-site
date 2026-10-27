@@ -8,24 +8,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,sans-serif;color:#d9d2c3;background:#07070a radial-gradient(ellipse at top,#2a1408 0%,#07070a 60%) fixed;min-height:100vh;line-height:1.6}
+body{font-family:Inter,sans-serif;color:#d9d2c3;background:#07070a radial-gradient(ellipse at top,#2a1408 0%,#07070a 60%) fixed;min-height:100vh;line-height:1.6;overflow-x:hidden}
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
-header{text-align:center;padding:110px 0 70px}
+header{text-align:center;padding:36px 0 14px}
 .tag{letter-spacing:6px;font-size:13px;color:#b88a4a;text-transform:uppercase}
-h1{font-family:Cinzel,serif;font-weight:800;font-size:clamp(56px,10vw,110px);letter-spacing:12px;background:linear-gradient(180deg,#ffe7a3,#d4a24c 55%,#8a5a1c);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(212,162,76,.15);margin:10px 0}
-.sub{font-size:18px;color:#bfb6a5;max-width:640px;margin:0 auto 34px}
-.soon{display:inline-block;padding:12px 34px;border:1px solid #d4a24c;color:#ffe7a3;font-family:Cinzel,serif;letter-spacing:4px;border-radius:2px;background:rgba(212,162,76,.08)}
-.rates{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:60px 0}
-.rate{min-width:150px;padding:20px;text-align:center;border:1px solid #3a2a18;background:rgba(20,14,10,.7)}
-.rate b{display:block;font-family:Cinzel,serif;font-size:28px;color:#ffd987}
-.rate span{font-size:12px;letter-spacing:2px;color:#9d927f;text-transform:uppercase}
-h2{font-family:Cinzel,serif;text-align:center;color:#e9c77d;letter-spacing:4px;margin:20px 0 30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-bottom:80px}
-.card{padding:24px;border:1px solid #2e2216;background:linear-gradient(180deg,rgba(30,20,12,.8),rgba(12,10,9,.8));transition:.2s}
+h1{font-family:Cinzel,serif;font-weight:800;font-size:clamp(44px,7vw,72px);letter-spacing:10px;background:linear-gradient(180deg,#ffe7a3,#d4a24c 55%,#8a5a1c);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(212,162,76,.15);margin:2px 0;line-height:1.15}
+.sub{font-size:15px;color:#bfb6a5;max-width:600px;margin:0 auto 18px;line-height:1.5}
+.soon{display:inline-block;margin:0 8px 6px 0;padding:4px 14px;font-size:12px;border:1px solid #d4a24c;color:#ffe7a3;font-family:Cinzel,serif;letter-spacing:4px;border-radius:2px;background:rgba(212,162,76,.08)}
+.rates{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px 0 20px}
+.rate{min-width:130px;padding:10px 16px;text-align:center;border:1px solid #3a2a18;background:rgba(20,14,10,.7)}
+.rate b{display:block;font-family:Cinzel,serif;font-size:22px;line-height:1.3;color:#ffd987}
+.rate span{font-size:11px;letter-spacing:2px;color:#9d927f;text-transform:uppercase}
+h2{font-family:Cinzel,serif;text-align:center;color:#e9c77d;letter-spacing:4px;margin:6px 0 14px;font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}
+.card{padding:14px 16px;border:1px solid #2e2216;background:linear-gradient(180deg,rgba(30,20,12,.8),rgba(12,10,9,.8));transition:.2s}
 .card:hover{border-color:#d4a24c;transform:translateY(-3px)}
-.card h3{font-family:Cinzel,serif;color:#ffd987;font-size:17px;margin-bottom:8px}
-.card p{font-size:14px;color:#a9a090}
-.vote{margin:46px auto 0;display:inline-flex;flex-direction:column;align-items:center;gap:12px;padding:18px 30px;border:1px solid #3a2a18;background:rgba(20,14,10,.75);box-shadow:0 0 30px rgba(212,162,76,.08)}
+.card h3{font-family:Cinzel,serif;color:#ffd987;font-size:15px;margin-bottom:4px}
+.card p{font-size:13px;line-height:1.45;color:#a9a090}
+.vote{margin:0;display:inline-flex;flex-direction:column;align-items:center;gap:10px;padding:14px 22px;border:1px solid #3a2a18;background:rgba(20,14,10,.75);box-shadow:0 0 30px rgba(212,162,76,.08)}
 .vote span{font-family:Cinzel,serif;font-size:13px;letter-spacing:4px;color:#e9c77d}
 .vote small{font-size:12px;color:#8f8573}
 .vbtns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
@@ -33,16 +35,17 @@ h2{font-family:Cinzel,serif;text-align:center;color:#e9c77d;letter-spacing:4px;m
 .vbtns a:hover{border-color:#d4a24c}
 .vote img{display:block;max-width:100%;max-height:100%;object-fit:contain;transition:.2s;filter:drop-shadow(0 0 0 rgba(212,162,76,0))}
 .vote a:hover img{transform:translateY(-2px);filter:drop-shadow(0 0 10px rgba(212,162,76,.45))}
-footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13px;color:#6f6656}
-.cd{margin:34px auto 0;max-width:720px}
-.cd-label{font-family:Cinzel,serif;letter-spacing:5px;font-size:clamp(11px,1.8vw,14px);color:#e9c77d;margin-bottom:18px}
+footer{text-align:center;padding:14px;border-top:1px solid #1e1710;font-size:13px;color:#6f6656}
+.cd{margin:0}
+.hero{display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap}
+.cd-label{font-family:Cinzel,serif;letter-spacing:5px;font-size:clamp(11px,1.8vw,14px);color:#e9c77d;margin-bottom:12px}
 .cd-grid{display:flex;justify-content:center;gap:clamp(8px,2vw,18px)}
-.cd-box{position:relative;width:clamp(68px,18vw,140px);padding:clamp(14px,2.5vw,24px) 0 clamp(10px,2vw,16px);border-radius:14px;background:linear-gradient(160deg,rgba(255,231,163,.10),rgba(20,14,10,.55));border:1px solid rgba(212,162,76,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 10px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,231,163,.18);overflow:hidden}
+.cd-box{position:relative;width:clamp(62px,20vw,96px);padding:12px 0 9px;border-radius:14px;background:linear-gradient(160deg,rgba(255,231,163,.10),rgba(20,14,10,.55));border:1px solid rgba(212,162,76,.45);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 10px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,231,163,.18);overflow:hidden}
 .cd-box:before{content:"";position:absolute;inset:0 0 50% 0;background:linear-gradient(180deg,rgba(255,255,255,.06),transparent);pointer-events:none}
-.cd-num{display:block;font-family:Cinzel,serif;font-weight:800;font-size:clamp(30px,8vw,64px);line-height:1;color:#ffd987;text-shadow:0 0 18px rgba(255,200,90,.55),0 0 42px rgba(212,162,76,.35)}
+.cd-num{display:block;font-family:Cinzel,serif;font-weight:800;font-size:clamp(26px,7vw,44px);line-height:1;color:#ffd987;text-shadow:0 0 18px rgba(255,200,90,.55),0 0 42px rgba(212,162,76,.35)}
 .cd-num.tick{animation:cdflip .6s cubic-bezier(.2,.7,.2,1)}
 @keyframes cdflip{0%{transform:perspective(400px) rotateX(-80deg);opacity:.2;filter:brightness(1.8)}60%{transform:perspective(400px) rotateX(8deg);opacity:1}100%{transform:none}}
-.cd-unit{display:block;margin-top:8px;font-size:clamp(9px,1.6vw,12px);letter-spacing:3px;color:#9d927f;text-transform:uppercase}
+.cd-unit{display:block;margin-top:5px;font-size:clamp(9px,1.6vw,12px);letter-spacing:3px;color:#9d927f;text-transform:uppercase}
 .cd-live{font-family:Cinzel,serif;font-weight:800;font-size:clamp(30px,7vw,60px);letter-spacing:6px;color:#ffd987;text-shadow:0 0 24px rgba(255,200,90,.7);animation:cdpulse 1.6s ease-in-out infinite}
 @keyframes cdpulse{50%{text-shadow:0 0 50px rgba(255,200,90,1);transform:scale(1.04)}}
 </style>
@@ -52,9 +55,9 @@ footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13p
   <div class="tag">Lineage II &middot; Gracia Final</div>
   <h1>L2 RAZE</h1>
   <p class="sub">A PvP-focused world where only the bold return with glory. Gear up, gather your clan and claim your place in Aden.</p>
-  <div class="soon">COMING SOON</div>
+  <div class="hero">
   <div class="cd" id="cd">
-    <div class="cd-label">GRAND OPENING - 21.11.2026 - 15:00 (GMT-3)</div>
+    <div class="cd-label"><span class="soon">COMING SOON</span> GRAND OPENING - 21.11.2026 - 15:00 (GMT-3)</div>
     <div class="cd-grid">
       <div class="cd-box"><span class="cd-num" id="cd-d">00</span><span class="cd-unit">Days</span></div>
       <div class="cd-box"><span class="cd-num" id="cd-h">00</span><span class="cd-unit">Hours</span></div>
@@ -62,7 +65,6 @@ footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13p
       <div class="cd-box"><span class="cd-num" id="cd-s">00</span><span class="cd-unit">Seconds</span></div>
     </div>
   </div>
-  <br>
   <div class="vote">
     <span>VOTE FOR L2 RAZE</span>
     <div class="vbtns">
@@ -70,6 +72,7 @@ footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13p
       <a href="https://l2.hopzone.net/site/vote/107783/1" target="_blank" rel="noopener"><img src="https://l2.hopzone.net/assets/img/banners/vote_banners/banner_2.png" alt="Vote for L2RAZE.COM" title="L2.HOPZONE.NET - Lineage 2 Servers ranking" /></a>
     </div>
     <small>Every vote helps the server grow.</small>
+  </div>
   </div>
 </header>
 <section class="wrap">
@@ -95,7 +98,7 @@ footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13p
 <script>
 (function(){var T=new Date('2026-11-21T15:00:00-03:00').getTime(),ids=['d','h','m','s'],prev={};
 function p(n){return n<10?'0'+n:''+n}
-function tick(){var d=T-Date.now();if(d<=0){document.getElementById('cd').innerHTML='<div class="cd-live">SERVER IS LIVE!</div>';var b=document.querySelector('.soon');if(b)b.style.display='none';return}
+function tick(){var d=T-Date.now();if(d<=0){document.getElementById('cd').innerHTML='<div class="cd-live">SERVER IS LIVE!</div>';return}
 var v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];
 ids.forEach(function(k,i){var e=document.getElementById('cd-'+k),t=p(v[i]);if(prev[k]!==t){e.textContent=t;e.classList.remove('tick');void e.offsetWidth;e.classList.add('tick');prev[k]=t}});setTimeout(tick,1000-Date.now()%1000)}
 tick()})();
