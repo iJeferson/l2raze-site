@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1068" height="972" viewBox="0 0 1068 972" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Gold check hexagon logo</title>
+  <defs>
+    <linearGradient id="goldGradient" x1="410" y1="215" x2="650" y2="805" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFE95A"/>
+      <stop offset="0.32" stop-color="#FFD83A"/>
+      <stop offset="0.58" stop-color="#F7C52B"/>
+      <stop offset="0.78" stop-color="#E9B52A"/>
+      <stop offset="1" stop-color="#D9A321"/>
+    </linearGradient>
+    <linearGradient id="goldHighlight" x1="300" y1="300" x2="820" y2="650" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF27A" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#FFD43A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#C98C12" stop-opacity="0.14"/>
+    </linearGradient>
+  </defs>
+  <g shape-rendering="geometricPrecision">
+    <path d="M 524 215 L 265 365 L 264 655 L 282 668 L 519 801 L 529 804 L 784 656 L 784 470 L 719 534 L 719 625 L 526 740 L 328 625 L 329 394 L 527 278 L 657 353 L 662 353 L 700 316 L 698 312 L 530 215 Z" fill="url(#goldGradient)"/>
+    <path d="M 837 334 L 753 335 L 523 565 L 396 440 L 395 520 L 528 649 Z" fill="url(#goldGradient)"/>
+    <path d="M 524 215 L 265 365 L 264 655 L 282 668 L 519 801 L 529 804 L 784 656 L 784 470 L 719 534 L 719 625 L 526 740 L 328 625 L 329 394 L 527 278 L 657 353 L 662 353 L 700 316 L 698 312 L 530 215 Z" fill="url(#goldHighlight)"/>
+    <path d="M 837 334 L 753 335 L 523 565 L 396 440 L 395 520 L 528 649 Z" fill="url(#goldHighlight)"/>
+  </g>
+</svg>
