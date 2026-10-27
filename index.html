@@ -148,6 +148,12 @@ h1{font-size:clamp(44px,min(6vw,8.5vh),130px) !important}.gflogo{width:clamp(180
 @media(max-width:1400px){.page{width:min(74vw,1120px) !important}.elf{display:none}.knight{left:-9vw;opacity:.5}.dwarf{right:-10vw;opacity:.5}}
 @media(max-width:1000px){.page{width:92vw !important}.top{grid-template-columns:1fr !important}.knight{opacity:.2;left:-18vw}.dwarf{opacity:.2;right:-22vw;width:70vw}.demon img{opacity:.18}}
 @media(max-width:640px){.knight,.dwarf,.elf{display:none}.demon{width:120vw;margin-left:-60vw;top:-4vh}.demon img{opacity:.14}.cd-label{white-space:normal}}
+.vbtns a.l2v{flex-direction:column;gap:1px;background:#161515;text-decoration:none}
+.vbtns a.l2v img{height:48%;width:auto}
+.vbtns a.l2v b{font-family:Inter,sans-serif;font-weight:900;font-size:clamp(9px,.62vw,13px);letter-spacing:1px;color:#fff;line-height:1.1}
+.vbtns a.l2v i{font-style:normal;font-weight:700;font-size:clamp(7px,.45vw,10px);letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.45);line-height:1.1}
+.vbtns a.l2v:hover{border-color:rgba(210,187,255,.5)}
+@media(max-width:640px){.vbtns{gap:6px;flex-wrap:nowrap}.vbtns a{width:26vw;height:16vw;max-width:110px;max-height:66px}}
 </style>
 </head>
 <body>
@@ -185,6 +191,7 @@ h1{font-size:clamp(44px,min(6vw,8.5vh),130px) !important}.gflogo{width:clamp(180
     <div class="vbtns">
       <a href="https://l2network.eu/index.php?a=in&u=l2raze" target="_blank" rel="noopener"><img src="https://l2network.eu/button.php?u=l2raze&buttontype=static" alt="Vote for L2 Raze on L2Network" width="88" height="53" loading="lazy" decoding="async" /></a>
       <a href="https://l2.hopzone.net/site/vote/107783/1" target="_blank" rel="noopener"><img src="https://l2.hopzone.net/assets/img/banners/vote_banners/banner_2.png" alt="Vote for L2 Raze on L2 Hopzone" loading="lazy" decoding="async" title="L2.HOPZONE.NET - Lineage 2 Servers ranking" /></a>
+      <a class="l2v" href="https://www.l2votes.com/vote/1036" target="_blank" rel="noopener" title="L2Votes - Lineage 2 Servers ranking"><img src="img/l2votes.svg" alt="Vote for L2 Raze on L2Votes" width="52" height="47" loading="lazy" decoding="async"><b>L2VOTES</b><i>vote for us</i></a>
     </div>
     <small>Every vote helps the server grow.</small>
     </div>
