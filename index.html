@@ -28,7 +28,10 @@ h2{font-family:Cinzel,serif;text-align:center;color:#e9c77d;letter-spacing:4px;m
 .vote{margin:46px auto 0;display:inline-flex;flex-direction:column;align-items:center;gap:12px;padding:18px 30px;border:1px solid #3a2a18;background:rgba(20,14,10,.75);box-shadow:0 0 30px rgba(212,162,76,.08)}
 .vote span{font-family:Cinzel,serif;font-size:13px;letter-spacing:4px;color:#e9c77d}
 .vote small{font-size:12px;color:#8f8573}
-.vote img{display:block;transition:.2s;filter:drop-shadow(0 0 0 rgba(212,162,76,0))}
+.vbtns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:center}
+.vbtns a{display:flex;align-items:center;justify-content:center;width:100px;height:60px;padding:4px;border:1px solid #2e2216;background:rgba(0,0,0,.35)}
+.vbtns a:hover{border-color:#d4a24c}
+.vote img{display:block;max-width:100%;max-height:100%;object-fit:contain;transition:.2s;filter:drop-shadow(0 0 0 rgba(212,162,76,0))}
 .vote a:hover img{transform:translateY(-2px);filter:drop-shadow(0 0 10px rgba(212,162,76,.45))}
 footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13px;color:#6f6656}
 </style>
@@ -42,7 +45,10 @@ footer{text-align:center;padding:30px;border-top:1px solid #1e1710;font-size:13p
   <br>
   <div class="vote">
     <span>VOTE FOR L2 RAZE</span>
-    <a href="https://l2network.eu/index.php?a=in&u=l2raze" target="_blank" rel="noopener"><img src="https://l2network.eu/button.php?u=l2raze&buttontype=static" alt="L2Network" /></a>
+    <div class="vbtns">
+      <a href="https://l2network.eu/index.php?a=in&u=l2raze" target="_blank" rel="noopener"><img src="https://l2network.eu/button.php?u=l2raze&buttontype=static" alt="L2Network" /></a>
+      <a href="https://l2.hopzone.net/site/vote/107783/1" target="_blank" rel="noopener"><img src="https://l2.hopzone.net/assets/img/banners/vote_banners/banner_2.png" alt="Vote for L2RAZE.COM" title="L2.HOPZONE.NET - Lineage 2 Servers ranking" /></a>
+    </div>
     <small>Every vote helps the server grow.</small>
   </div>
 </header>
